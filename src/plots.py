@@ -11,11 +11,16 @@ Produces figures saved to the `figures/` directory:
 """
 
 import os
+import sys
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from typing import List
+
+# Allow importing model when plots.py is run from src/
+sys.path.insert(0, os.path.dirname(__file__))
+from model import mc_predictive
 
 FIGURES_DIR = os.path.join(os.path.dirname(__file__), "..", "figures")
 os.makedirs(FIGURES_DIR, exist_ok=True)
@@ -126,8 +131,6 @@ def plot_predictive_compare(
     """
     Compare posterior predictive densities: MCMC vs VI, overlaid on data histogram.
     """
-    from model import mc_predictive
-
     if x_grid is None:
         lo = data.min() - 3.0
         hi = data.max() + 3.0
