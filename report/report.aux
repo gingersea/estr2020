@@ -1,0 +1,123 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Abstract}{3}{section.1}\protected@file@percent }
+\citation{metropolis1953equation,hastings1970monte}
+\citation{jordan1999introduction,kingma2013auto,rezende2014stochastic}
+\citation{gelman1992inference}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Introduction}{4}{section.2}\protected@file@percent }
+\newlabel{eq:bayes}{{1}{4}{Introduction}{equation.2.1}{}}
+\newlabel{eq:predictive}{{2}{4}{Introduction}{equation.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model and Problem Definition}{5}{section.3}\protected@file@percent }
+\newlabel{sec:model}{{3}{5}{Model and Problem Definition}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Prior Distribution}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{eq:prior}{{3}{5}{Prior Distribution}{equation.3.3}{}}
+\newlabel{eq:log_prior}{{4}{5}{Prior Distribution}{equation.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Likelihood Function}{5}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:likelihood}{{5}{5}{Likelihood Function}{equation.3.5}{}}
+\newlabel{eq:log_likelihood}{{6}{5}{Likelihood Function}{equation.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Unnormalized Posterior}{5}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:unnorm}{{3.3}{5}{Unnormalized Posterior}{subsection.3.3}{}}
+\newlabel{eq:unnorm}{{7}{5}{Unnormalized Posterior}{equation.3.7}{}}
+\newlabel{eq:log_unnorm}{{8}{5}{Unnormalized Posterior}{equation.3.8}{}}
+\citation{metropolis1953equation,hastings1970monte}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Prediction Task}{6}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:pred_task}{{9}{6}{Prediction Task}{equation.3.9}{}}
+\newlabel{eq:mc_pred}{{10}{6}{Prediction Task}{equation.3.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method I: Metropolis-Hastings MCMC}{6}{section.4}\protected@file@percent }
+\newlabel{sec:mh}{{4}{6}{Method I: Metropolis-Hastings MCMC}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Algorithm Derivation}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proposal Distribution.}{6}{section*.2}\protected@file@percent }
+\newlabel{eq:proposal}{{11}{6}{Proposal Distribution}{equation.4.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Acceptance Probability.}{6}{section*.3}\protected@file@percent }
+\newlabel{eq:mh_accept_general}{{12}{6}{Acceptance Probability}{equation.4.12}{}}
+\newlabel{eq:mh_accept}{{14}{7}{Acceptance Probability}{equation.4.14}{}}
+\newlabel{eq:mh_log_accept}{{15}{7}{Acceptance Probability}{equation.4.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Algorithm Pseudocode}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Metropolis-Hastings MCMC}}{7}{algorithm.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{alg:mh}{{1}{7}{Metropolis-Hastings MCMC}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Convergence Diagnostics}{7}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Trace Plots.}{7}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Gelman-Rubin $\hat  {R}$ Statistic.}{7}{section*.5}\protected@file@percent }
+\citation{gelman1992inference}
+\citation{jordan1999introduction,blei2017variational}
+\newlabel{eq:rhat}{{16}{8}{Gelman-Rubin $\hat {R}$ Statistic}{equation.4.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Prediction Using MCMC Samples}{8}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Method II: Mean-Field Stochastic Gradient Variational Inference}{8}{section.5}\protected@file@percent }
+\newlabel{sec:vi}{{5}{8}{Method II: Mean-Field Stochastic Gradient Variational Inference}{section.5}{}}
+\newlabel{eq:vi_obj}{{17}{8}{Method II: Mean-Field Stochastic Gradient Variational Inference}{equation.5.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Variational Objective: The ELBO}{8}{subsection.5.1}\protected@file@percent }
+\newlabel{eq:kl_def}{{18}{8}{Variational Objective: The ELBO}{equation.5.18}{}}
+\newlabel{eq:kl_elbo}{{20}{8}{Variational Objective: The ELBO}{equation.5.20}{}}
+\newlabel{eq:elbo}{{21}{8}{Variational Objective: The ELBO}{equation.5.21}{}}
+\citation{kingma2013auto,rezende2014stochastic}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Mean-Field Variational Family}{9}{subsection.5.2}\protected@file@percent }
+\newlabel{eq:mean_field}{{22}{9}{Mean-Field Variational Family}{equation.5.22}{}}
+\newlabel{eq:log_q}{{23}{9}{Mean-Field Variational Family}{equation.5.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Reparameterization Trick and Stochastic Optimization}{9}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reparameterization.}{9}{section*.6}\protected@file@percent }
+\newlabel{eq:elbo_reparam}{{24}{9}{Reparameterization}{equation.5.24}{}}
+\@writefile{toc}{\contentsline {paragraph}{Gradient Estimator.}{9}{section*.7}\protected@file@percent }
+\newlabel{eq:grad_estimator}{{25}{9}{Gradient Estimator}{equation.5.25}{}}
+\citation{rezende2014stochastic}
+\newlabel{eq:grad_mu}{{26}{10}{Gradient Estimator}{equation.5.26}{}}
+\newlabel{eq:grad_rho}{{27}{10}{Gradient Estimator}{equation.5.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Algorithm Pseudocode}{10}{subsection.5.4}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Mean-Field Stochastic Gradient VI (Reparameterization)}}{10}{algorithm.2}\protected@file@percent }
+\newlabel{alg:vi}{{2}{10}{Mean-Field Stochastic Gradient VI (Reparameterization)}{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Prediction Using VI}{10}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{10}{section.6}\protected@file@percent }
+\newlabel{sec:experiments}{{6}{10}{Experiments}{section.6}{}}
+\citation{kingma2014adam}
+\citation{roberts1997weak}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Experimental Setup}{11}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Toy Dataset.}{11}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{MCMC Hyperparameters.}{11}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{VI Hyperparameters.}{11}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Convergence Diagnostics}{11}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}MCMC Diagnostics}{11}{subsubsection.6.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}VI Diagnostics}{11}{subsubsection.6.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Posterior Approximation Quality}{11}{subsection.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Trace plots for $\mu $ (top) and $\rho $ (bottom) from three independent MH chains (post-burn-in). All chains exhibit good mixing with stable fluctuations around the posterior mean.}}{12}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:trace}{{1}{12}{Trace plots for $\mu $ (top) and $\rho $ (bottom) from three independent MH chains (post-burn-in). All chains exhibit good mixing with stable fluctuations around the posterior mean}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Predictive Performance}{12}{subsection.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces ELBO as a function of VI training iteration. The rapid initial rise followed by a stable plateau indicates convergence. Residual fluctuations are due to stochastic gradient estimation.}}{13}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:elbo}{{2}{13}{ELBO as a function of VI training iteration. The rapid initial rise followed by a stable plateau indicates convergence. Residual fluctuations are due to stochastic gradient estimation}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Posterior approximation comparison. Blue histograms: MCMC samples. Orange curves: VI Gaussian approximation. Red dashed lines: true parameter values. VI captures the posterior mode accurately but significantly underestimates variance for $\mu $ due to the mean-field restriction.}}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:posterior}{{3}{13}{Posterior approximation comparison. Blue histograms: MCMC samples. Orange curves: VI Gaussian approximation. Red dashed lines: true parameter values. VI captures the posterior mode accurately but significantly underestimates variance for $\mu $ due to the mean-field restriction}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{13}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{13}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Accuracy vs.\ Efficiency Trade-off}{13}{subsection.7.1}\protected@file@percent }
+\citation{roberts1997weak}
+\citation{kingma2014adam}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Quantitative comparison of MCMC (Metropolis-Hastings) and VI (mean-field SGVI).}}{14}{table.caption.14}\protected@file@percent }
+\newlabel{tab:results}{{1}{14}{Quantitative comparison of MCMC (Metropolis-Hastings) and VI (mean-field SGVI)}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Uncertainty Quantification}{14}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Impact of Hyperparameter Choices}{14}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{MCMC Step Size.}{14}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{VI Learning Rate and Initialization.}{14}{section*.16}\protected@file@percent }
+\citation{roberts1997weak}
+\citation{hoffman2014no}
+\citation{rezende2015variational,kingma2016improved}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Limitations and Extensions}{15}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{MCMC.}{15}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{VI.}{15}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{15}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{15}{Conclusion}{section.8}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{blei2017variational}{{1}{2017}{{Blei et al.}}{{}}}
+\bibcite{gelman1992inference}{{2}{1992}{{Gelman and Rubin}}{{}}}
+\bibcite{hastings1970monte}{{3}{1970}{{Hastings}}{{}}}
+\bibcite{hoffman2014no}{{4}{2014}{{Hoffman and Gelman}}{{}}}
+\bibcite{jordan1999introduction}{{5}{1999}{{Jordan et al.}}{{}}}
+\bibcite{kingma2014adam}{{6}{2014}{{Kingma and Ba}}{{}}}
+\bibcite{kingma2013auto}{{7}{2013}{{Kingma and Welling}}{{}}}
+\bibcite{kingma2016improved}{{8}{2016}{{Kingma et al.}}{{}}}
+\bibcite{metropolis1953equation}{{9}{1953}{{Metropolis et al.}}{{}}}
+\bibcite{rezende2015variational}{{10}{2015}{{Rezende and Mohamed}}{{}}}
+\bibcite{rezende2014stochastic}{{11}{2014}{{Rezende et al.}}{{}}}
+\bibcite{roberts1997weak}{{12}{1997}{{Roberts et al.}}{{}}}
+\gdef \@abspage@last{16}

@@ -1,0 +1,44 @@
+\contentsline {section}{\numberline {1}Abstract}{3}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}%
+\contentsline {section}{\numberline {3}Model and Problem Definition}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Prior Distribution}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Likelihood Function}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Unnormalized Posterior}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Prediction Task}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Method I: Metropolis-Hastings MCMC}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Algorithm Derivation}{6}{subsection.4.1}%
+\contentsline {paragraph}{Proposal Distribution.}{6}{section*.2}%
+\contentsline {paragraph}{Acceptance Probability.}{6}{section*.3}%
+\contentsline {subsection}{\numberline {4.2}Algorithm Pseudocode}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Convergence Diagnostics}{7}{subsection.4.3}%
+\contentsline {paragraph}{Trace Plots.}{7}{section*.4}%
+\contentsline {paragraph}{Gelman-Rubin $\hat {R}$ Statistic.}{7}{section*.5}%
+\contentsline {subsection}{\numberline {4.4}Prediction Using MCMC Samples}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Method II: Mean-Field Stochastic Gradient Variational Inference}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Variational Objective: The ELBO}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Mean-Field Variational Family}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Reparameterization Trick and Stochastic Optimization}{9}{subsection.5.3}%
+\contentsline {paragraph}{Reparameterization.}{9}{section*.6}%
+\contentsline {paragraph}{Gradient Estimator.}{9}{section*.7}%
+\contentsline {subsection}{\numberline {5.4}Algorithm Pseudocode}{10}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Prediction Using VI}{10}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Experiments}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Experimental Setup}{11}{subsection.6.1}%
+\contentsline {paragraph}{Toy Dataset.}{11}{section*.8}%
+\contentsline {paragraph}{MCMC Hyperparameters.}{11}{section*.9}%
+\contentsline {paragraph}{VI Hyperparameters.}{11}{section*.10}%
+\contentsline {subsection}{\numberline {6.2}Convergence Diagnostics}{11}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}MCMC Diagnostics}{11}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}VI Diagnostics}{11}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Posterior Approximation Quality}{11}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Predictive Performance}{12}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Discussion}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Accuracy vs.\ Efficiency Trade-off}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Uncertainty Quantification}{14}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Impact of Hyperparameter Choices}{14}{subsection.7.3}%
+\contentsline {paragraph}{MCMC Step Size.}{14}{section*.15}%
+\contentsline {paragraph}{VI Learning Rate and Initialization.}{14}{section*.16}%
+\contentsline {subsection}{\numberline {7.4}Limitations and Extensions}{15}{subsection.7.4}%
+\contentsline {paragraph}{MCMC.}{15}{section*.17}%
+\contentsline {paragraph}{VI.}{15}{section*.18}%
+\contentsline {section}{\numberline {8}Conclusion}{15}{section.8}%
